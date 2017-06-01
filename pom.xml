@@ -3,10 +3,9 @@
   <groupId>com.jmx</groupId>
   <artifactId>autoJmx</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-</properties>
+      <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
   <build>
   <plugins>
     <plugin>
@@ -16,7 +15,7 @@
   	<executions>
   		<execution>
   			<id>jmeter-tests</id>
-  			<phase>verify</phase>
+  			<phase>integration-test</phase>
   			<goals>
   				<goal>jmeter</goal>
   			</goals>
@@ -33,7 +32,7 @@
   <executions>
     <execution>
     <id>jmeter-reports</id>
-      <phase>verify</phase>
+      <phase>integration-test</phase>
       <goals>
         <goal>analyze</goal>
       </goals>
