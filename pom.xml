@@ -5,6 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
       <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <argLine>-Dfile.encoding=UTF-8</argLine>
     </properties>
   <build>
   <plugins>
@@ -37,7 +38,6 @@
         <goal>analyze</goal>
       </goals>
       <configuration>      
-        <encoding>UTF-8</encoding>
         <source>${project.build.directory}/**/**/*.jtl</source>
         <targetDirectory>${project.build.directory}/results</targetDirectory>
         <processAllFilesFound>true</processAllFilesFound>   
